@@ -9,11 +9,11 @@ app.use(cors());
 
 require("./connection");
 
-const server = require("http").createServer(app);
+const server = require("https").createServer(app);
 const PORT = 8080;
 const io = require("socket.io")(server, {
   cors: {
-    origin: "https://ciriverse.xyz",
+    origin: "https://www.ciriverse.xyz",
     methods: ["GET", "POST"],
   },
 });
